@@ -3,5 +3,6 @@ Arrowlib is a datapack arrow, bow, and crossbow library that allows for the crea
 
 Features:
 
-  -Built-in nbt tags for custom arrows that allow for toggleable infinity consumption and custom pickups (meaning, arrows fired and then picked up preserve their item NBT data)\n
+  -Built-in nbt tags for custom arrows that allow for toggleable infinity consumption and custom pickups (meaning, arrows fired and then picked up preserve their item NBT data)
+  
   -Function tags for running commands at different points in the firing process (e.g tags for running commands when a player starts pulling a bow, or loads a crossbow, or when they shoot a bow, and many more.)
