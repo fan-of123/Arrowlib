@@ -1,0 +1,7 @@
+{
+  "values": [
+      "n_arrow:zprivate/player/crossbow/remove_tag",
+      "#n_arrow:public/cbow_pull_tick"
+  ],
+  "replace":false
+}

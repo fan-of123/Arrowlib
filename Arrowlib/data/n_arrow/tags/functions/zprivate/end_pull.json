@@ -1,0 +1,7 @@
+{
+    "values": [
+        "n_arrow:zprivate/player/end_pull",
+        "#n_arrow:public/end_bow_pull"
+    ],
+    "replace":false
+  }

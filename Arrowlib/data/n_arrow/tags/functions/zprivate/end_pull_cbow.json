@@ -1,0 +1,7 @@
+{
+    "values": [
+        "n_arrow:zprivate/player/crossbow/end_pull",
+        "#n_arrow:public/end_cbow_pull"
+    ],
+    "replace":false
+  }

@@ -1,0 +1,7 @@
+{
+  "values": [
+      "n_arrow:zprivate/player/remove_tag",
+      "#n_arrow:public/bow_pull_tick"
+  ],
+  "replace":false
+}

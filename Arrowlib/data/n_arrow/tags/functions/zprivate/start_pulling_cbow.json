@@ -1,0 +1,7 @@
+{
+    "values": [
+        "n_arrow:zprivate/player/crossbow/check",
+        "#n_arrow:public/start_pulling_cbow"
+    ],
+    "replace":false
+  }

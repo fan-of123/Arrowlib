@@ -1,0 +1,1 @@
+$item replace entity @s container.$(slot) with $(item)$(tag) $(count)

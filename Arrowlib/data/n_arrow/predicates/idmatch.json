@@ -1,0 +1,27 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "n_arrow.id"
+    },
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#id"
+        },
+        "score": "n_arrow.temp"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#id"
+        },
+        "score": "n_arrow.temp"
+      }
+    }
+  }
+  
