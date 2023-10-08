@@ -54,3 +54,5 @@ function #n_arrow:public/post/shoot_bow
 tag @s remove n_arrow.temp
 
 tag @e[type=#n_arrow:customproj] add n_arrow.scanned
+
+function #n_arrow:zprivate/end_pull
