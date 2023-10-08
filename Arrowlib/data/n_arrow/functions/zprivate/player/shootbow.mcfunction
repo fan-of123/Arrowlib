@@ -20,16 +20,8 @@ execute if entity @s[gamemode=creative] run function n_arrow:zprivate/player/inf
 execute if entity @s[gamemode=!creative,scores={n_arrow.infinity=1},tag=!n_arrow.validChange] run function n_arrow:zprivate/player/infinity/find_arrow_init
 execute if entity @s[gamemode=!creative,tag=n_arrow.validChange] run function n_arrow:zprivate/arrows/firedcustom/main with storage n_arrow:storage tempMacro
 
-#execute if entity @s[gamemode=!creative,scores={n_arrow.infinity=1},tag=n_arrow.validChange] if data storage n_arrow:storage CustomArrowData.n_arrow unless data storage n_arrow:storage {CustomArrowData:{n_arrow:{consume_infinity:1b}}} run function n_arrow:zprivate/player/infinity/shootbow_giveback
-#execute if entity @s[gamemode=!creative,scores={n_arrow.infinity=0},tag=n_arrow.validChange] run function n_arrow:zprivate/arrows/firedcustom/main with storage n_arrow:storage tempMacro
-
 scoreboard players set #API.normal_arrow n_arrow.API 0
 execute if data storage n_arrow:storage {CustomArrowData:{id:"minecraft:arrow"}} unless data storage n_arrow:storage CustomArrowData.tag run scoreboard players set #API.normal_arrow n_arrow.API 1
-
-data remove storage n_arrow:storage check_for_norm.Slot
-data remove storage n_arrow:storage check_for_norm.Count
-data remove storage n_arrow:storage check_for_norm.tag.display.Name
-execute if data storage n_arrow:storage {check_for_norm:{tag:{}}}
 
 scoreboard players operation #infinity n_arrow.temp = @s n_arrow.infinity
 
@@ -44,8 +36,6 @@ execute if data storage n_arrow:storage {CustomArrowData:{tag:{n_arrow:{pickup_i
 execute if data storage n_arrow:storage {CustomArrowData:{tag:{n_arrow:{pickup_item:1b,consume_infinity:1b}}}} if entity @s[gamemode=!creative,scores={n_arrow.infinity=1},tag=!n_arrow.validChange] as @e[type=#n_arrow:customproj,type=!minecraft:firework_rocket,type=!minecraft:spectral_arrow,tag=!n_arrow.scanned,tag=!n_arrow.API.ignore] at @s run function n_arrow:zprivate/player/shootbow/extra_pickup2b
 
 execute if entity @s[gamemode=!creative,tag=!n_arrow.validChange,scores={n_arrow.infinity=1}] if data storage n_arrow:storage {CustomArrowData:{tag:{n_arrow:{consume_infinity:1b}}}} unless data storage n_arrow:storage {CustomArrowData:{tag:{n_arrow:{pickup_item:1b}}}} as @e[type=#n_arrow:customproj,type=!minecraft:firework_rocket,type=!minecraft:spectral_arrow,tag=!n_arrow.scanned,tag=!n_arrow.API.ignore] at @s run function n_arrow:zprivate/player/shootbow/extra_pickup1b_remove
-
-function #n_arrow:public/post/shoot_bow
 
 execute as @e[type=#n_arrow:customproj,tag=!n_arrow.scanned] at @s run function n_arrow:zprivate/player/shootbow/extra_effects_post
 
