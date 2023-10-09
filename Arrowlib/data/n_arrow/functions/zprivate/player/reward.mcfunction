@@ -1,4 +1,5 @@
 advancement revoke @s only n_arrow:inv_change
+
 data modify storage n_arrow:storage tempMacro set value {id:-1,selectedSlot:-1}
 execute store result storage n_arrow:storage tempMacro.id int 1 run scoreboard players get @s n_arrow.id
 execute store result storage n_arrow:storage tempMacro.selectedSlot int 1 run data get entity @s SelectedItemSlot

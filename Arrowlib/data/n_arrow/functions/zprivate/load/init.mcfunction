@@ -18,4 +18,4 @@ data modify storage n_arrow:storage potionColor set value [{id:"minecraft:speed"
 data modify storage n_arrow:storage scoreboardTransfers set value []
 data modify storage n_arrow:storage scoreboardTransfersLoad set value []
 
-schedule function n_arrow:zprivate/1s 1s
+schedule function n_arrow:zprivate/5s 1t
